@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home screen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/init.js"></script>
+    <link rel="stylesheet"
+        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="spinner_loader_div" class="spinner_loader_div">
+        <img src="img/logo-sp.svg">
+    </div>
+    <div class="container-fluid heade-section">
+        <div class="header-first-part">
+            <div id="navicon" onclick="openNav()">
+                <img src="img/navicon.svg" width="35" height="35" alt="navicon">
+            </div>
+            <div id="locationicon">
+                <img src="img/locationicon.svg" width="19" height="19" alt="location">
+            </div>
+            <div class="current-loction"><span class="text-color">GTB Nagar, Lalbaug, Everard Nagar</span>
+            </div>
+        </div>
+        <div class="header-second-part">
+            <div class="notification-icon">
+                <img src="img/notification-icon.svg" width="36" height="36" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="profile-avater-menu">
+            <div class="avter-icon-menu">
+                <svg viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M87.5 175C135.693 175 175 135.693 175 87.5005C175 39.3065 135.694 0 87.5 0C39.3063 0 0 39.3065 0 87.5002C0 135.693 39.3063 175 87.5 175Z"
+                        fill="#F1F1F1" />
+                    <path
+                        d="M58.28 103.219C50.9833 84.8108 35.6561 68.1508 54.943 34.5926C62.8864 20.7717 75.0198 11.6566 87.5542 14.7427C100.089 11.6569 112.222 20.772 120.165 34.5926C139.452 68.1508 124.125 84.8108 116.828 103.219L87.5552 103.292L58.281 103.219H58.28Z"
+                        fill="#666666" />
+                    <path
+                        d="M38.2498 131.997C37.3345 133.475 35.0509 146.04 32.5254 155.567C47.5501 167.716 66.6733 174.997 87.4986 174.997C108.325 174.997 127.448 167.716 142.473 155.567C139.946 146.041 137.663 133.474 136.747 131.997C122.691 109.3 101.024 119.208 99.5463 93.2349C99.5463 93.2349 92.5757 98.4367 87.2532 98.4842C81.9304 98.5317 75.4441 93.563 75.4441 93.563C73.9703 119.514 52.2966 109.317 38.2498 131.997Z"
+                        fill="#FED198" />
+                    <path
+                        d="M99.9244 96.9034C99.7497 95.7649 99.6212 94.5474 99.547 93.2356C99.547 93.2356 92.5764 98.4374 87.254 98.4849C81.9312 98.5324 75.4449 93.5637 75.4449 93.5637C75.3697 94.8995 75.2377 96.1351 75.0576 97.2886C75.194 97.3963 75.3293 97.5057 75.4681 97.6123L75.4664 97.6311C75.8762 97.988 82.1068 103.346 87.2529 103.292C92.399 103.345 98.629 97.9869 99.0395 97.6311L99.0384 97.6123C99.3406 97.3809 99.6339 97.1427 99.9234 96.9041L99.9244 96.9034Z"
+                        fill="#F0B97D" />
+                    <path
+                        d="M75.4679 93.5803C75.8777 93.8896 82.1083 98.5309 87.2544 98.4844C92.4005 98.5309 98.6304 93.8889 99.0409 93.5803C106.819 89.0457 113.202 75.6758 111.761 61.186C110.581 49.3166 97.7411 66.7204 88.7983 42.2305C76.1412 68.7445 64.1195 53.0607 62.7489 63.1089C61.2382 74.1801 67.4537 88.1105 75.4679 93.581V93.5803V93.5803Z"
+                        fill="#FED198" />
+                    <path
+                        d="M65.256 112.145C57.5959 116.237 43.5833 116.361 38.2516 124.933C37.3229 126.425 34.9919 144.712 32.4277 155.488C47.4661 167.684 66.6283 174.997 87.4994 174.997C108.372 174.997 127.533 167.685 142.572 155.488C140.008 144.712 137.397 126.567 136.748 124.933C133.208 116.003 116.819 115.63 109.152 111.513C97.2297 154.766 79.4604 157.715 65.2566 112.149L65.2539 112.146H65.256V112.145Z"
+                        fill="#C83B53" />
+                    <path
+                        d="M70.3611 107.847C69.8635 121.304 72.1515 140.368 87.2507 145.24C73.0353 145.835 63.8109 125.352 53.3027 119.988L70.3608 107.848V107.847H70.3611Z"
+                        fill="white" />
+                    <path
+                        d="M104.986 107.847C105.508 121.304 103.106 140.368 87.25 145.24C102.177 145.835 111.864 125.352 122.897 119.988L104.985 107.848L104.986 107.847Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <h5 id="nme-menu">Sarika Seghal</h5>
+            <span class="nme-id"> Senior beauty analys</span>
+        </div>
+        <div class="hr-line"></div>
+        <div class="quick-access">
+            <div class="quick-text">Quick Access</div>
+
+            <div class="category-quick">
+                <a href="index.html">
+                    <div class="category-part">
+                        <div class="item-click"><i class="fa fa-home" aria-hidden="true"></i>Home</div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="category-quick">
+                <a href="dashboard.html">
+                    <div class="category-part">
+                        <div class="item-click"><i class="fa fa-bar-chart" aria-hidden="true"></i>Dashboard</div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="category-quick">
+                <a href="index.html">
+                    <div class="category-part">
+                        <div class="item-click"><i class="fa fa-sign-in" aria-hidden="true"></i></i>Logout</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <section class="container-fluid content-part mg-b-5">
+        <div class="parent-profile-part">
+            <div class="profile-details">
+                <span class="mg-b-8">Hello Sarika !!</span>
+                <div class="avter-postion">
+                    <h5 class="mg-b-8">Senior beauty Analyst</h5>
+                    <div class="mg-b-8" id="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <span style="color:#777777">Target progress</span>
+                </div>
+
+
+            </div>
+            <div class="profile-avater">
+                <div class="avter-icon">
+                    <svg viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M87.5 175C135.693 175 175 135.693 175 87.5005C175 39.3065 135.694 0 87.5 0C39.3063 0 0 39.3065 0 87.5002C0 135.693 39.3063 175 87.5 175Z"
+                            fill="#F1F1F1" />
+                        <path
+                            d="M58.28 103.219C50.9833 84.8108 35.6561 68.1508 54.943 34.5926C62.8864 20.7717 75.0198 11.6566 87.5542 14.7427C100.089 11.6569 112.222 20.772 120.165 34.5926C139.452 68.1508 124.125 84.8108 116.828 103.219L87.5552 103.292L58.281 103.219H58.28Z"
+                            fill="#666666" />
+                        <path
+                            d="M38.2498 131.997C37.3345 133.475 35.0509 146.04 32.5254 155.567C47.5501 167.716 66.6733 174.997 87.4986 174.997C108.325 174.997 127.448 167.716 142.473 155.567C139.946 146.041 137.663 133.474 136.747 131.997C122.691 109.3 101.024 119.208 99.5463 93.2349C99.5463 93.2349 92.5757 98.4367 87.2532 98.4842C81.9304 98.5317 75.4441 93.563 75.4441 93.563C73.9703 119.514 52.2966 109.317 38.2498 131.997Z"
+                            fill="#FED198" />
+                        <path
+                            d="M99.9244 96.9034C99.7497 95.7649 99.6212 94.5474 99.547 93.2356C99.547 93.2356 92.5764 98.4374 87.254 98.4849C81.9312 98.5324 75.4449 93.5637 75.4449 93.5637C75.3697 94.8995 75.2377 96.1351 75.0576 97.2886C75.194 97.3963 75.3293 97.5057 75.4681 97.6123L75.4664 97.6311C75.8762 97.988 82.1068 103.346 87.2529 103.292C92.399 103.345 98.629 97.9869 99.0395 97.6311L99.0384 97.6123C99.3406 97.3809 99.6339 97.1427 99.9234 96.9041L99.9244 96.9034Z"
+                            fill="#F0B97D" />
+                        <path
+                            d="M75.4679 93.5803C75.8777 93.8896 82.1083 98.5309 87.2544 98.4844C92.4005 98.5309 98.6304 93.8889 99.0409 93.5803C106.819 89.0457 113.202 75.6758 111.761 61.186C110.581 49.3166 97.7411 66.7204 88.7983 42.2305C76.1412 68.7445 64.1195 53.0607 62.7489 63.1089C61.2382 74.1801 67.4537 88.1105 75.4679 93.581V93.5803V93.5803Z"
+                            fill="#FED198" />
+                        <path
+                            d="M65.256 112.145C57.5959 116.237 43.5833 116.361 38.2516 124.933C37.3229 126.425 34.9919 144.712 32.4277 155.488C47.4661 167.684 66.6283 174.997 87.4994 174.997C108.372 174.997 127.533 167.685 142.572 155.488C140.008 144.712 137.397 126.567 136.748 124.933C133.208 116.003 116.819 115.63 109.152 111.513C97.2297 154.766 79.4604 157.715 65.2566 112.149L65.2539 112.146H65.256V112.145Z"
+                            fill="#C83B53" />
+                        <path
+                            d="M70.3611 107.847C69.8635 121.304 72.1515 140.368 87.2507 145.24C73.0353 145.835 63.8109 125.352 53.3027 119.988L70.3608 107.848V107.847H70.3611Z"
+                            fill="white" />
+                        <path
+                            d="M104.986 107.847C105.508 121.304 103.106 140.368 87.25 145.24C102.177 145.835 111.864 125.352 122.897 119.988L104.985 107.848L104.986 107.847Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="container-fluid content-part mg-b-5">
+        <div class="servies-part">
+            <h5>Services</h5>
+            <div class="view-btn">
+                <p>View all</p>
+            </div>
+        </div>
+        <div id="grid-servies-part">
+            <div class="circle-card">
+                <div class="icon-card">
+                    <img src="img/Salesicon.svg" alt="" srcset="">
+                </div>
+                <div class="circle-card-title">
+                    <p>Sales</p>
+                </div>
+            </div>
+            <div class="circle-card">
+                <div class="icon-card">
+                    <img src="img/sales-history.svg" alt="" srcset="">
+                </div>
+                <div class="circle-card-title">
+                    <p>Sales History</p>
+                </div>
+            </div>
+            <div class="circle-card">
+                <div class="icon-card">
+                    <img src="img/dashboard.svg" alt="" srcset="">
+                </div>
+                <div class="circle-card-title">
+                    <p>Dashboard</p>
+                </div>
+            </div>
+            <div class="circle-card">
+                <div class="icon-card">
+                    <img src="img/leaderboards.svg" alt="" srcset="">
+                </div>
+                <div class="circle-card-title">
+                    <p>Leaderboards</p>
+                </div>
+            </div>
+            <div class="circle-card">
+                <div class="icon-card">
+                    <img src="img/attendance.svg" alt="" srcset="">
+                </div>
+                <div class="circle-card-title">
+                    <p>Attendance</p>
+                </div>
+            </div>
+            <div class="circle-card">
+                <div class="icon-card">
+                    <img src="img/stock.svg" alt="" srcset="">
+                </div>
+                <div class="circle-card-title">
+                    <p>Stock</p>
+                </div>
+            </div>
+
+            <div class="circle-card">
+                <div class="icon-card">
+                    <img src="img/offers-coupons.svg" alt="" srcset="">
+                </div>
+                <div class="circle-card-title">
+                    <p>Offerscoupons</p>
+                </div>
+            </div>
+            <div class="circle-card">
+                <div class="icon-card">
+                    <img src="img/rewards.svg" alt="" srcset="">
+                </div>
+                <div class="circle-card-title">
+                    <p>Rewards</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="container-fluid content-part mg-t-10">
+        <div class="guidelines">
+            <div class="guidelines_img"><img
+                    src="img/washing-your-hands-properly-all-time-protect-yourself-from-coronavirus_80802-429 1.png"
+                    alt=""></div>
+            <div class="guidelines_text">
+                <div class="heading-text">
+                    <h5>Customer safety is OUR priority!</h5>
+                </div>
+                <div class="summery-text">
+                    <p>Follow our safety guidelines to ensure a safe experience for the Customer.</p>
+                </div>
+                <div class="btnnn"><span>Safety Guidelines</span></div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container-fluid content-part mg-t-10">
+        <div class="servies-part">
+            <h5>Beautician blogs</h5>
+            <div class="trending-filter">
+                <select name="sources" id="sources" class="custom-select sources" placeholder="My Categories">
+                    <option value="trendingone">Trending</option>
+                    <option value="trending2">Trending2</option>
+
+                </select>
+            </div>
+        </div>
+        <div style="color:#5E6265; text-align: justify;"><span>We’ve filtered the hottest blog topics for you to read ,
+                enjoy and improve your
+                customer experience
+                as a beauty analyst</span></div>
+        <div class="owl-carousel owl-theme">
+            <div class="carouselitem">
+                <div class="carouselImg"><img src="img/Rectangle 1656.png" width="320px" height="121px" alt=""></div>
+                <div class="carouselheading">
+                    <h5>how does customer service impact sales directly - A thread</h5>
+                </div>
+                <div class="userName">
+                    <span>Anisha seghal</span>
+                </div>
+                <div class="userDetails">
+                    <div class="card_date">
+                        <span>Aug,01,2020</span>
+                        <span>5 mins read</span>
+                    </div>
+                    <div class="card_reps">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+<script>
+    $(document).ready(function () {
+        $(function () {
+            setTimeout(function () {
+                $("#spinner_loader_div").fadeOut(1500);
+            }, 1000);
+        });
+
+    });
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 3,
+        margin: -20,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+</script>
+
+</html>
